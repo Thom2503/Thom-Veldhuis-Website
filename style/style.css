@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@font-face {
+    font-family: 'misaki';
+    src: url('style/font/misaki_mincho.ttf');
+}
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: purple;
+}
+
+::selection {
+  color: white;
+  background: purple;
+}
+html {
+  font-family: 'Press Start 2P', cursive;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+    font-size: 18px;
+    background-color: #EEEEEE
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+.menu {
+  font-size: 16px;
+  overflow: hidden;
+  padding: 20px 0 10px 0;
+  background: white;
+  width: 100%;
+}
+.menu-l {
+  float: left;
+  padding-bottom: 1rem;
+}
+.menu-r {
+  float: right;
+}
+.content {
+  position: relative;
+  margin: 0 auto;
+  height: auto;
+  padding: 1.5rem;
+  display: block;
+}
+h3 {
+  display: table;
+  padding: 0 .5rem;
+  margin: -1.8rem 0 1rem;
+  font-size: 1rem;
+  background-color: #fff;
+}
+a {
+  text-decoration: none;
+  color: purple;
+}
+a:hover {
+  text-decoration: none;
+  color: white;
+  background: purple;
+}
+.blok {
+  display: inline-flex;
+  margin: auto;
+  border: black solid 4px;
+  padding: 20px 10px 20px 10px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.blok, .blok-link {
+    text-decoration: none;
+    color: black;
+}
+.blok-img {
+  width: 30em;
+  height: auto;
+  padding: 1.2rem;
+  border: black dotted 4px;
+  margin: 1.2rem;
+}
+.mij-img {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+  padding: 1.2rem;
+}
+.blok-l {
+  float: left;
+}
+.blok-r {
+  float right;
+}
+.footer {
+     text-align: right;
+     margin-top: 5em;
+     padding: .5em 0;
+     font-size: .75em;
+ }
+ #eye {
+   width: 1.75em;
+ }
+@media (max-width: 900px) {
+    body {
+        font-size: 15px;
+        margin: 0px 10px;
+    }
+    .menu {
+        font-size: 14px;
+    }
+    .content {
+      overflow-x: hidden;
+    }
+    .blok {
+      display: block;
+      width: 100%;
+      margin: 0;
+      border: black solid 2px;
+    }
+    .blok-l {
+      float: none;
+    }
+    .blok, .blok-r {
+        height: auto;
+        padding: 1.2rem;
+    }
+    .blok-img {
+      position: relative;
+      width: 15em;
+      margin: 0 auto;
+    }
