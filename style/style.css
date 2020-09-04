@@ -92,12 +92,20 @@ a:hover {
 .blok-r {
   float: right;
 }
-.footer {
+.footer-r {
      text-align: right;
      margin-top: 5em;
      padding: .5em 0;
      font-size: .75em;
+     float: right;
  }
+ .footer-l {
+      text-align: left;
+      margin-top: 5em;
+      padding: .5em 0;
+      font-size: .75em;
+      float: left;
+  }
  #eye {
    width: 1.75em;
  }
