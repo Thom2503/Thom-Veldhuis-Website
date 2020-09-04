@@ -90,7 +90,7 @@ a:hover {
   float: left;
 }
 .blok-r {
-  float right;
+  float: right;
 }
 .footer {
      text-align: right;
