@@ -83,8 +83,11 @@ a:hover {
 .mij-img {
   border-radius: 50%;
   width: 10em;
-  height: 10em;
+  height: auto;
   padding: 1.2rem;
+  position: relative;
+  margin-right: 2.3em;
+  border: black dotted 4px;
 }
 .blok-l {
   float: left;
