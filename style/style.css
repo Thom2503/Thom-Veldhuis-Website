@@ -17,8 +17,6 @@ html {
 }
 body {
     -webkit-font-smoothing: antialiased;
-    font-size: 18px;
-    background-color: #EEEEEE;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
@@ -51,6 +49,10 @@ h3 {
   margin: -1.8rem 0 1rem;
   font-size: 1rem;
   background-color: #fff;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
 }
 a {
   text-decoration: none;
@@ -132,4 +134,5 @@ a:hover {
       position: relative;
       width: 15em;
       margin: 0 auto;
+      padding: 0;
     }
