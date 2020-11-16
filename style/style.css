@@ -4,10 +4,10 @@
     src: url('style/font/misaki_mincho.ttf');
 }
 * {
-  background-color: #fdf6e3;
+  background-color: #fdf6e3; /* white */
 }
 h1 {
-    color: #dc322f;
+    color: #dc322f; /* orange */
 }
 ::-moz-selection { /* Code for Firefox */
   color: white;
