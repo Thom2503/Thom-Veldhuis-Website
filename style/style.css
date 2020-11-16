@@ -6,6 +6,9 @@
 * {
   background-color: #fdf6e3;
 }
+h1 {
+    color: #dc322f;
+}
 ::-moz-selection { /* Code for Firefox */
   color: white;
   background: purple;
