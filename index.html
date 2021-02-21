@@ -1,7 +1,4 @@
-<!-- 
 
-
- -->
 <!DOCTYPE html>
 <html lang="nl" dir="ltr">
   <head>
@@ -65,10 +62,13 @@
         </div>
       </div>
       <div class="footer">
-        2020 Made By Thom Veldhuis <img id="eye" src="img/eyeEmoji.png" alt="&eye"><br><br>
+        <span id="year"></span> Made By Thom Veldhuis <img id="eye" src="img/eyeEmoji.png" alt="&eye"><br><br>
           <a href="https://twitter.com/Thom2503" target="_blank">Twitter</a>
           <a href="#">------</a>
       </div>
     </div>
   </body>
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
 </html>
