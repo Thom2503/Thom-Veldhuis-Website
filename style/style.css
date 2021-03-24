@@ -13,6 +13,7 @@
 }
 * {
   background-color: #fdf6e3; /* white */
+  color: black;
 }
 h1 {
     color: #dc322f; /* orange */
@@ -151,4 +152,27 @@ a:hover {
       margin: 0 auto;
       padding: 0;
     }
+}
+@media (prefers-color-scheme: dark) {
+  * {
+    background-color: #002b36; /* white */
+    color: #eee8d5;
+  }
+  h1 {
+    color: #dc322f; /* orange */
+  }
+
+  a {
+    text-decoration: none;
+    color: purple;
+  }
+  a:hover {
+    text-decoration: none;
+    color: white;
+    background: purple;
+  }
+  ::selection {
+    color: white;
+    background: purple;
+  }
 }
