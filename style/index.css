@@ -124,7 +124,10 @@ a:hover {
   display: inline-block;
   width: 46%;
 }
-
+.dark-mode {
+  background-color: black;
+  color: white;
+}
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
