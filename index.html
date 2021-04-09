@@ -1,74 +1,53 @@
-
 <!DOCTYPE html>
 <html lang="nl" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Thom Veldhuis // Student</title>
-    <link rel="stylesheet" href="style/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/languageSwitch.js/" charset="utf-8"></script>
-  </head>
-  <body>
-    <div class="main">
-      <div class="menu">
-        <div class="menu-l">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutme.html">Over mij</a></li>
-            <li><a href="projects.html">Projectjes</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="https://github.com/Thom2503" target="_blank">Github</a></li>
-          </ul>
-        </div>
-        <div class="menu-r">
-          <h1>Thom Veldhuis</h1>
-          <a href="#eng" onclick="reloadPage()" onclick="setLanguage(en)" data-reload>ENG</a>
-          <a href="#ned" onclick="reloadPage()" onclick="setLanguage(nl)" data-reload>NLD</a>
-          <!-- <a href="#">ᴊᴀᴩ </a> -->
-        </div>
-      </div>
-      <div class="content">
-        <div class="blok" style="width: auto;">
-          <div class="blok-r">
-            <h3>Over mij</h3>
-            <img class="mij-img" src="img/face.png" alt="Foto van mij">
-          </div>
-          <div class="blok-l">
-            Software Development student op het Grafisch Lyceum Rotterdam.
-            Ik hou van programmeren, gamen, muziek luisteren en nog meer.<br>
-            <span style='color: #cb4b16;'>based in 🇳🇱 Netherlands</span>
-          </div>
-        </div>
-        <div class="blok" style="width: auto;">
-          <div class="blok-r">
-            <h3>Mijn eerste project</h3>
-            <img class="blok-img" src="img/firstProject.PNG" alt="plaatje van het project">
-          </div>
-          <div class="blok-l">
-            <a class="blok-link" href='#'>Het was een school opdracht die ik met een klasgenoot heb gemaakt.</a><br>
-            <span style="color: purple">klik op de tekst voor meer!</span>
-          </div>
-        </div>
-        <div class="blok" style="width: auto;">
-          <div class="blok-r">
-            <h3>Mijn startpage</h3>
-            <img class="blok-img" src="img/frontpage.PNG" alt="plaatje van het project">
-          </div>
-          <div class="blok-l">
-            <a class="blok-link" href='https://thom2503.github.io/Startpage/' target="_blank">Ik heb dit gemaakt meer uit nieuwsgierigheid wat ik er mee kan, ik ben er nog steeds mee bezig.
-            Ik maak gebruik van een firefox addon die je new tab redirect naar een andere site.</a><br>
-            <span style="color: purple">klik op de tekst voor meer!</span>
-          </div>
-        </div>
-      </div>
-      <div class="footer">
-        <span id="year"></span> Made By Thom Veldhuis <img id="eye" src="img/eyeEmoji.png" alt="&eye"><br><br>
-          <a href="https://twitter.com/Thom2503" target="_blank">Twitter</a>
-          <a href="#">------</a>
-      </div>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Thom Veldhuis</title>
+  <link rel="stylesheet" href="style/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="topnav" id="myTopnav">
+    <div class="logo-img">
+      <img src="img/torii_gate.png" onclick="goToIndex();" alt="Logo van mijn website">
     </div>
-  </body>
-  <script>
-    document.getElementById("year").innerHTML = new Date().getFullYear();
-  </script>
+      <a href="https://github.com/Thom2503" target="_blank">Github</a>
+      <a href="contact.html">Contact</a>
+      <a href="projects.html">Projecten</a>
+      <a href="about.html">Over</a>
+      <a href="javascript:void(0);" class="icon" onclick="topbarFunctie()">
+        <i class="fa fa-bars"></i>
+      </a>
+  </div>
+  <main>
+    <img class="center-img" src="img/birb_header.png">
+  </main>
+  <footer>
+    <div class="spanright">
+      <span id="year"></span> Made By Thom Veldhuis <img id="eye" src="img/eyeEmoji.png" alt="&eye"><br><br>
+      <a href="https://twitter.com/Thom2503" target="_blank">Twitter</a>
+      <a href="#">------</a>
+    </div>
+  </footer>
+</body>
+<script>
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+
+  function goToIndex() {
+    window.location.href = "index.html";
+  }
+
+  function topbarFunctie() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
+
 </html>

@@ -1,19 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @font-face {
     font-family: 'misaki';
-    src: url('font/misaki_mincho.ttf');
-}
-@font-face {
-  font-family: 'Kitchen Sink';
-  src: url('font/Kitchen\ Sink.ttf');
-}
-@font-face {
-  font-family: 'Pixifont2';
-  src: url('font/Pixifont2-Regular.ttf');
+    src: url('style/font/misaki_mincho.ttf');
 }
 * {
   background-color: #fdf6e3; /* white */
-  color: black;
 }
 h1 {
     color: #dc322f; /* orange */
@@ -28,8 +19,7 @@ h1 {
   background: purple;
 }
 html {
-  font-family: 'Kitchen Sink', cursive;
-  font-size: large;
+  font-family: 'Press Start 2P', cursive;
 }
 body {
     -webkit-font-smoothing: antialiased;
@@ -152,27 +142,3 @@ a:hover {
       margin: 0 auto;
       padding: 0;
     }
-}
-@media (prefers-color-scheme: dark) {
-  * {
-    background-color: #002b36; /* white */
-    color: #eee8d5;
-  }
-  h1 {
-    color: #dc322f; /* orange */
-  }
-
-  a {
-    text-decoration: none;
-    color: purple;
-  }
-  a:hover {
-    text-decoration: none;
-    color: white;
-    background: purple;
-  }
-  ::selection {
-    color: white;
-    background: purple;
-  }
-}
