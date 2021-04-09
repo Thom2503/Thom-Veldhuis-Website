@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Thom Veldhuis || Contact</title>
+  <link rel="stylesheet" href="style/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="topnav" id="myTopnav">
+    <div class="logo-img">
+      <img src="img/torii_gate.png" onclick="goToIndex();" alt="Logo van mijn website">
+    </div>
+      <a href="https://github.com/Thom2503" target="_blank">Github</a>
+      <a href="contact.html">Contact</a>
+      <a href="projects.html">Projecten</a>
+      <a href="about.html">Over</a>
+      <a href="javascript:void(0);" class="icon" onclick="topbarFunctie()">
+        <i class="fa fa-bars"></i>
+      </a>
+  </div>
+  <main>
+    <div class="contact">
+      <h5>Je kan mij nu emailen naar:</h5>
+      <a href="mailto:thomveldhuis03@gmail.com?subject=Contact">email</a><br>
+      Of je kan andere manieren om met mij contact op te nemen zoals op twitter een DM te sturen.<br>
+      Hou dit over werk/stages of fouten op de website.
+    </div>
+  </main>
+  <footer>
+    <div class="spanright">
+      <span id="year"></span> Made By Thom Veldhuis <img id="eye" src="img/eyeEmoji.png" alt="&eye"><br><br>
+      <a href="https://twitter.com/Thom2503" target="_blank">Twitter</a>
+      <a href="#">------</a>
+    </div>
+  </footer>
+</body>
+<script>
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+
+  function goToIndex() {
+    window.location.href = "index.html";
+  }
+
+  function topbarFunctie() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
+
+</html>
