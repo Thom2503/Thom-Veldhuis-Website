@@ -1,95 +1,92 @@
 <!DOCTYPE html>
 <html lang="nl" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Thom Veldhuis // Projectjes</title>
-    <link rel="stylesheet" href="style/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/languageSwitch.js/" charset="utf-8"></script>
-  </head>
-  <body>
-    <div class="main">
-      <div class="menu">
-        <div class="menu-l">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutme.html">Over mij</a></li>
-            <li><a href="projects.html">Projectjes</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="https://github.com/Thom2503" target="_blank">Github</a></li>
-          </ul>
-        </div>
-        <div class="menu-r">
-          <h1>Thom Veldhuis || Projectjes</h1>
-          <a href="#eng" onclick="reloadPage()" onclick="setLanguage(en)" data-reload>ENG</a>
-          <a href="#ned" onclick="reloadPage()" onclick="setLanguage(nl)" data-reload>NLD</a>
-          <!-- <a href="#">ᴊᴀᴩ </a> -->
-        </div>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Thom Veldhuis || Over</title>
+  <link rel="stylesheet" href="style/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="topnav" id="myTopnav">
+    <div class="logo-img">
+      <img src="img/torii_gate.png" onclick="goToIndex();" alt="Logo van mijn website">
+    </div>
+      <a href="https://github.com/Thom2503" target="_blank">Github</a>
+      <a href="contact.html">Contact</a>
+      <a href="projects.html">Projecten</a>
+      <a href="about.html">Over</a>
+      <a href="javascript:void(0);" class="icon" onclick="topbarFunctie()">
+        <i class="fa fa-bars"></i>
+      </a>
+  </div>
+  <main>
+    <div class="container">
+      <img class="mij-img" src="img/firstProject.PNG" alt="plaatje van het eerste project">
+      <div class="text">
+        <h3>Mijn eerste project</h3>
+        <a href='#'>Het was een school opdracht die ik met een klasgenoot heb gemaakt.</a><br>
+        <span style="color: purple">klik op de tekst voor meer!</span>
       </div>
-      <div class="content">
-        <div class="blok" style="width: auto;">
-          <div class="blok-r">
-            <h3>Mijn eerste project</h3>
-            <img class="blok-img" src="img/firstProject.PNG" alt="plaatje van het eerste project">
-          </div>
-          <div class="blok-l">
-            <a class="blok-link" href='#'>Het was een school opdracht die ik met een klasgenoot heb gemaakt.</a><br>
-            <span style="color: purple">klik op de tekst voor meer!</span>
-          </div>
-        </div>
-        <div class="blok" style="width: auto;">
-          <div class="blok-r">
-            <h3>Mijn startpage</h3>
-            <img class="blok-img" src="img/frontpage.PNG" alt="plaatje van mijn startpage">
-          </div>
-          <div class="blok-l">
-            <a class="blok-link" href='https://thom2503.github.io/Startpage/' target="_blank">Ik heb dit gemaakt meer uit nieuwsgierigheid wat ik er mee kan, ik ben er nog steeds mee bezig.
-            Ik maak gebruik van een firefox addon die je new tab redirect naar een andere site.</a><br>
-            <span style="color: purple">klik op de tekst voor meer!</span>
-          </div>
-        </div>
-        <div class="blok" style="width: auto;">
-          <div class="blok-r">
-            <h3>Stagewebsite GLR (schoolopdracht)</h3>
-            <img class="blok-img" src="img/stagewebsite.png" alt="plaatje van mijn glr stagewebsite">
-          </div>
-          <div class="blok-l">
-            <a class="blok-link" href='https://github.com/Thom2503/StageWebsite_GLR' target="_blank">Dit is een project gemaakt voor een opdracht van school,
-              dit heb ik gemaakt met 3 andere, waar ik de backend van de website heb gemaakt.</a><br>
-            <span style="color: purple">klik op de tekst voor meer!</span>
-          </div>
-        </div>
-        <div class="blok" style="width: auto;">
-          <div class="blok-r">
-            <h3>Kookclub de pollepel (schoolopdracht)</h3>
-            <img class="blok-img" src="img/kookclub.png" alt="plaatje van de kookclub">
-          </div>
-          <div class="blok-l">
-            <a class="blok-link" href='https://github.com/Thom2503/kookclub-pollepel' target="_blank">Dit is een project voor een schoolopdracht waar wij een
-              website moesten maken voor een kookclub, ik heb dit samen gemaakt met drie andere waar ik de backend heb gedaan.</a><br>
-            <span style="color: purple">klik op de tekst voor meer!</span>
-          </div>
-        </div>
-        <div class="blok" style="width: auto;">
-          <div class="blok-r">
-            <h3>Thom's Blog (schoolopdracht)</h3>
-            <img class="blok-img" src="img/thomsblog.png" alt="plaatje van mijn blog">
-          </div>
-          <div class="blok-l">
-            <a class="blok-link" href='https://github.com/Thom2503/front-fluid-design' target="_blank">Dit is een website die ik Thom's blog noem
-            omdat wij voor school een opdracht moesten maken die een fluid-design filosofie had en ik dit had bedacht om te doen.</a><br>
-            <span style="color: purple">klik op de tekst voor meer!</span>
-          </div>
-        </div>
+      <hr>
+      <img class="mij-img" src="img/frontpage.PNG" alt="plaatje van mijn startpage">
+      <div class="text">
+        <h3>Mijn startpage</h3>
+        <a class="blok-link" href='https://thom2503.github.io/Startpage/' target="_blank">Ik heb dit gemaakt meer uit nieuwsgierigheid wat ik er mee kan, ik ben er nog steeds mee bezig.
+        Ik maak gebruik van een firefox addon die je new tab redirect naar een andere site.</a><br>
+        <span style="color: purple">klik op de tekst voor meer!</span>
       </div>
-      <div class="footer">
-        <span id="year"></span> Made By Thom Veldhuis <img id="eye" src="img/eyeEmoji.png" alt="&eye"><br><br>
-          <a href="https://twitter.com/Thom2503">Twitter</a>
-          <a href="#">------</a>
+      <hr>
+      <img class="mij-img" src="img/stagewebsite.png" alt="plaatje van mijn glr stagewebsite">
+      <div class="text">
+        <h3>Stagewebsite GLR (schoolopdracht)</h3>
+        <a class="blok-link" href='https://github.com/Thom2503/StageWebsite_GLR' target="_blank">Dit is een project gemaakt voor een opdracht van school,
+          dit heb ik gemaakt met 3 andere, waar ik de backend van de website heb gemaakt.</a><br>
+        <span style="color: purple">klik op de tekst voor meer!</span>
+      </div>
+      <hr>
+      <img class="mij-img" src="img/kookclub.png" alt="plaatje van de kookclub">
+      <div class="text">
+        <h3>Kookclub de pollepel (schoolopdracht)</h3>
+        <a class="blok-link" href='https://github.com/Thom2503/kookclub-pollepel' target="_blank">Dit is een project voor een schoolopdracht waar wij een
+          website moesten maken voor een kookclub, ik heb dit samen gemaakt met drie andere waar ik de backend heb gedaan.</a><br>
+        <span style="color: purple">klik op de tekst voor meer!</span>
+      </div>
+      <hr>
+      <img class="mij-img" src="img/thomsblog.png" alt="plaatje van mijn blog">
+      <div class="text">
+        <h3>Thom's Blog (schoolopdracht)</h3>
+        <a class="blok-link" href='https://github.com/Thom2503/front-fluid-design' target="_blank">Dit is een website die ik Thom's blog noem
+        omdat wij voor school een opdracht moesten maken die een fluid-design filosofie had en ik dit had bedacht om te doen.</a><br>
+        <span style="color: purple">klik op de tekst voor meer!</span>
       </div>
     </div>
-  </body>
-  <script>
-    document.getElementById("year").innerHTML = new Date().getFullYear();
-  </script>
+  </main>
+  <footer>
+    <div class="spanright">
+      <span id="year"></span> Made By Thom Veldhuis <img id="eye" src="img/eyeEmoji.png" alt="&eye"><br><br>
+      <a href="https://twitter.com/Thom2503" target="_blank">Twitter</a>
+      <a href="#">------</a>
+    </div>
+  </footer>
+</body>
+<script>
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+
+  function goToIndex() {
+    window.location.href = "index.html";
+  }
+
+  function topbarFunctie() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
+
 </html>

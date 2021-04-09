@@ -132,7 +132,10 @@ a:hover {
     width: 15%;
   }
   .container .text {
-    width: 100%;
+    width: 95%;
+  }
+  .container .mij-img {
+    width: 95%;
   }
 }
 
@@ -155,6 +158,9 @@ a:hover {
     width: 15%;
   }
   .container .text {
-    width: 100%;
+    width: 95%;
+  }
+  .container .mij-img {
+    width: 95%;
   }
 }
