@@ -142,9 +142,11 @@ a:hover {
   }
   .container .text {
     width: 95%;
+    padding: 1em;
   }
   .container .mij-img {
     width: 95%;
+    padding: 0.7em;
   }
 }
 
@@ -168,8 +170,10 @@ a:hover {
   }
   .container .text {
     width: 95%;
+    padding: 1em;
   }
   .container .mij-img {
     width: 95%;
+    padding: 0.7em;
   }
 }
