@@ -25,8 +25,8 @@
   <main>
     <div class="contact">
       <h5>Je kan mij nu emailen naar:</h5>
-      <a href="mailto:thomveldhuis03@gmail.com?subject=Contact">thomveldhuis03@gmail.com (persoonlijk)</a> of<br>
-      <a href="mailto:84843@glr.nl?subject=Contact">84843@glr.nl (school)</a> <br>
+      <a href="javascript:linkTo_UnCryptMailto('nbjmup;uipnwfmeivjt14Ahnbjm/dpn');">thomveldhuis03 [at] gmail [dot] com</a> of<br>
+      <a href="javascript:linkTo_UnCryptMailto('nbjmup;95954Ahms/om');">84843 [at] glr [dot] nl</a> <br>
       Of je kan andere manieren om met mij contact op te nemen zoals op twitter een DM te sturen.<br>
       Hou dit over werk/stages of fouten op de website.
     </div>
@@ -56,6 +56,23 @@
       x.className = "topnav";
     }
   }
+  function UnCryptMailto( s ) {
+       var n = 0;
+       var r = "";
+       for( var i = 0; i < s.length; i++) {
+           n = s.charCodeAt( i );
+           if( n >= 8364 ) {
+               n = 128;
+           }
+           r += String.fromCharCode( n - 1 );
+       }
+       return r;
+   }
+
+   function linkTo_UnCryptMailto( s ) {
+       location.href=UnCryptMailto( s );
+   }
+
 </script>
 
 </html>
