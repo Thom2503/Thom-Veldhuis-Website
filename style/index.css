@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+/* DotGothic16 */
 
 @font-face {
   font-family: 'misaki';
@@ -35,8 +37,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 html {
-  font-family: 'Kitchen Sink', cursive;
+  font-family: 'DotGothic16', cursive;
   font-size: large;
+  font-weight: bold;
 }
 
 body {
