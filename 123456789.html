@@ -14,17 +14,25 @@
     <div class="logo-img">
       <img src="img/torii_gate.png" onclick="goToIndex();" alt="Logo van mijn website">
     </div>
-      <a href="https://github.com/Thom2503" target="_blank">Github</a>
-      <a href="contact.html">Contact</a>
-      <a href="projects.html">Projecten</a>
-      <a href="about.html">Over</a>
-      <a href="javascript:void(0);" class="icon" onclick="topbarFunctie()">
-        <i class="fa fa-bars"></i>
-      </a>
+    <a href="https://github.com/Thom2503" target="_blank">Github</a>
+    <a href="contact.html">Contact</a>
+    <a href="projects.html">Projecten</a>
+    <a href="about.html">Over</a>
+    <a href="javascript:void(0);" class="icon" onclick="topbarFunctie()">
+      <i class="fa fa-bars"></i>
+    </a>
   </div>
   <main>
-    <div class="gallery">
-
+    <div id="gallery" class="gallery">
+        <script type="text/javascript">
+        var i = 0;
+        for (i = 1; i <= 6; i++) {
+          var img = document.createElement("img");
+          img.src = "img/pixelart/"+i+".png";
+          var src = document.getElementById("gallery");
+          src.appendChild(img);
+        }
+        </script>
     </div>
   </main>
   <footer>
@@ -52,23 +60,23 @@
       x.className = "topnav";
     }
   }
-  function UnCryptMailto( s ) {
-       var n = 0;
-       var r = "";
-       for( var i = 0; i < s.length; i++) {
-           n = s.charCodeAt( i );
-           if( n >= 8364 ) {
-               n = 128;
-           }
-           r += String.fromCharCode( n - 1 );
-       }
-       return r;
-   }
 
-   function linkTo_UnCryptMailto( s ) {
-       location.href=UnCryptMailto( s );
-   }
+  function UnCryptMailto(s) {
+    var n = 0;
+    var r = "";
+    for (var i = 0; i < s.length; i++) {
+      n = s.charCodeAt(i);
+      if (n >= 8364) {
+        n = 128;
+      }
+      r += String.fromCharCode(n - 1);
+    }
+    return r;
+  }
 
+  function linkTo_UnCryptMailto(s) {
+    location.href = UnCryptMailto(s);
+  }
 </script>
 
 </html>

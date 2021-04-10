@@ -120,14 +120,21 @@ a:hover {
   vertical-align: top;
   width: 46%;
 }
+
 .container .text {
   display: inline-block;
   width: 46%;
 }
-.dark-mode {
-  background-color: black;
-  color: white;
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 75%;
+  margin: 0 auto;
+  position: relative;
+  place-items: center;
 }
+
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -147,6 +154,14 @@ a:hover {
   .container .mij-img {
     width: 95%;
     padding: 0.7em;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+    place-items: center;
   }
 }
 
@@ -175,5 +190,13 @@ a:hover {
   .container .mij-img {
     width: 95%;
     padding: 0.7em;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+    place-items: center;
   }
 }
