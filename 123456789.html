@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>Thom Veldhuis || Over</title>
+  <title>Thom Veldhuis || Contact</title>
   <link rel="stylesheet" href="style/index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -23,24 +23,8 @@
       </a>
   </div>
   <main>
-    <div class="container">
-      <img class="mij-img" src="img/face.png" alt="Een foto van mij">
-      <div class="text">
-        <h4>Wie ben ik?</h4>
-        Software Development student op het Grafisch Lyceum Rotterdam.
-        Ik hou van programmeren, gamen, muziek luisteren en nog meer.<br>
-        <span style='color: #cb4b16;'>based in 🇳🇱 Netherlands</span><br>
-        Ik luister veel naar muziek, dat kan van Hardcore tot de rustigere Lo-Fi hip hop zijn.
-        In mijn vrije tijd doe ik aardig wat programmeren en kijk ik vooral naar verschillende programmeer talen.
-        Ik game ook een beetje in mijn vrije tijd en zit vooral veel op het internet random dingen te zoeken en te leren.
-        <h4>Wat kan ik?</h4>
-        Mijn kennis van programmeertalen is PHP en Javascript, daarbij kan ik ook HTML en CSS en een beetje C# in Unity.
-        Ik ben ook bezig met het leren van C.
-        Ik heb kennis van de Office apps, en kan dus gewoon de bestanden maken die ik moet maken. <br>
-        Ik kan ook veel met verschillende besturingssystemen, dus als er word gevraagd om met linux
-        te werken doe ik dat met plezier, zowel met windows en osx.<br>
-        <a href="https://github.com/Thom2503" target="_blank">Mijn github.</a>
-      </div>
+    <div class="gallery">
+
     </div>
   </main>
   <footer>
@@ -68,6 +52,23 @@
       x.className = "topnav";
     }
   }
+  function UnCryptMailto( s ) {
+       var n = 0;
+       var r = "";
+       for( var i = 0; i < s.length; i++) {
+           n = s.charCodeAt( i );
+           if( n >= 8364 ) {
+               n = 128;
+           }
+           r += String.fromCharCode( n - 1 );
+       }
+       return r;
+   }
+
+   function linkTo_UnCryptMailto( s ) {
+       location.href=UnCryptMailto( s );
+   }
+
 </script>
 
 </html>
