@@ -95,7 +95,7 @@ footer {
   padding: 14px 16px;
   font-size: 17px;
 }
-.textlink a {
+.textlink a, .contact a {
   color: purple;
   text-align: center;
   text-decoration: none;
