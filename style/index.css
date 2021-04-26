@@ -19,6 +19,23 @@
 * {
   background-color: rgb(242, 233, 226);
   color: black;
+  scrollbar-width: auto;
+  scrollbar-color: purple rgb(242, 233, 226)
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: auto;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(242, 233, 226);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: purple;
+  border-radius: 20px;
+  border: 3px solid rgb(242, 233, 226);
 }
 
 h1, h2, h3, h4, h5, h6 {
