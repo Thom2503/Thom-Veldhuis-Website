@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'apl386';
+  src: url('../fonts/APL386.ttf');
+}
+
+@font-face {
+  font-family: 'Hasklig';
+  src: url('../fonts/Hasklig-Medium.ttf');
+}
+
+* {
+  font-family: 'Hasklig', serif;
+}
+
+html {
+  background-color: #EEE6CF;
+}
+header {
+  display: flex;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #dc322f;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: purple;
+  font-family: monospace;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  background-color: purple;
+  text-decoration: underline;
+}
+
+a:active {
+  color: purple;
+  font-style: italic;
+}
+
+main {
+  width: 40em;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: purple;
+}
+
+::selection {
+  color: white;
+  background: purple;
+}
+
+#external {
+  width: 1em;
+  height: 1em;
+}
+
+.apl {
+  font-family: 'apl', sans-serif;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: relative;
+  place-items: center;
+}
+
+.gallery img {
+  width: 50%;
+  height: auto;
+}
+
+/* single page stuff */
+section { display: none; }
+
+section:target { display: block; }
+
+/* smaller screens */
+@media only screen and (max-width: 680px) {
+  #japanese, #thom, .project {
+    width: 100%;
+    height: auto;
+  }
+  body { font-size: 16px; }
+}
+
+@media only screen and (max-width: 540px) {
+  #japanese {
+    width: 100%;
+    height: auto;
+  }
+  main { width: 100%; }
+}

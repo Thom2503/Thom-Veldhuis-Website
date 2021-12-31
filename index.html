@@ -1,56 +1,177 @@
 <!DOCTYPE html>
-<html lang="nl" dir="ltr">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="icon" type="image/png" href="img/logo/tv-small.png"/>
+    <link rel="stylesheet" href="czz/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <title>thomveldhuis.xyz</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img src="img/logo/tv-small.png" alt="header logo with link"></a>
+      <ul>
+        <li><a style="display: block;" href="index.html">Home</a></li>
+        <li><a style="display: block;" href="#about">About</a></li>
+        <li><a style="display: block;" href="#projects">Projects</a></li>
+        <li><a style="display: block;" href="#contact">Contact</a></li>
+        <li><a style="display: block;" href="#other">Other</a></li>
+      </ul>
+      <hr>
+    </header>
+    <main>
+      <h1>thomveldhuis.xyz</h1>
+      <img id="japanese"  src="img/homeImage.png" alt="dithered japanese woodblock art">
+      <p>Hello, I'm Thom <br>
+         I currently am an intern at <a href="https://www.idd.nl" target="_blank">idd.nl</a> <img id="external" src="img/link.png" alt="external-link">
+         where I work on their websites</p>
+      <code class="prettyprint">
+        def factorial(n) <br>
+        &nbsp; (2..n).reduce(1, :*) <br>
+        end <br>
+      </code>
+      <section id="about">
+        <h2>About me</h2>
+        <img id="thom" src="img/thom.png" alt="This is a picture of me on a boat in amsterdam">
+        <p>I'm a software development student at Grafisch Lyceum Rotterdam. Current interests are games, music,
+           programming languages, art, reading (mainly articles on the web).</p>
+        <p>Live in the 🇳🇱 <span style="color: orange">the Netherlands</span></p>
+        <p>I can speak fluent English and am native in Dutch.</p>
+        <p>Technologies that I know and like: <br>
+           <ul>
+             <li>HTML/CSS</li>
+             <li>PHP</li>
+             <li>MySQL</li>
+             <li>Ruby</li>
+             <li>Python - A little bit.</li>
+             <li>Git</li>
+             <li>SVN</li>
+             <li>Vim - <a href="https://gist.github.com/Thom2503/1d2b6766306dc9437beac96e552bdc05" target="_blank">
+                       My vimrc</a> <img id="external" src="img/link.png" alt="external-link"></li>
+             <li>macOS</li>
+             <li>Linux</li>
+           </ul>
+        </p>
+        <p>What do I want to learn? <br>
+          <ul>
+            <li>LISP</li>
+            <li>C Language</li>
+            <li>To make games</li>
+            <li>To write</li>
+            <li>Japanese (although I do kinda know the basics)</li>
+          </ul>
+        </p>
+      </section>
+      <section id="projects">
+        <h2>My projects</h2>
+        <p>I have done a lot of small projects for school but I learned quite a lot from these projects.<br>
+           Some images are dithered for both aesthetics and for functional reasons.<br>
+           There are also some private things I am working on, but those are private...</p>
+        <h3>Stagewebsite for GLR</h3>
+        <img class="project" src="img/projects/dithered/stage.png" alt=""> <br>
+        <a href='https://github.com/Thom2503/StageWebsite_GLR' target="_blank">Github</a> <img id="external" src="img/link.png" alt="external-link">
+        <p>This was a website for students to give a rating for their internship, the teachers could then see the students ratings.</p>
+        <h3>Thoms blog</h3>
+        <img class="project" src="img/projects/dithered/bloghome.png" alt=""> <br>
+        <a href='https://thom2503.github.io/front-fluid-design/' target="_blank">Github</a> <img id="external" src="img/link.png" alt="external-link">
+        <p>This was small website to test a css framework with. I choose bootstrap and nes.css for the frameworks.</p>
+        <h3>Socialguys</h3>
+        <img class="project" src="img/projects/dithered/socialguys.png" alt=""> <br>
+        <a href='https://github.com/Thom2503/social-guys' target="_blank">Github</a> <img id="external" src="img/link.png" alt="external-link">
+        <p>A website where users can upload videos, comment on videos, subscribe to users and watch twitch livestreams.
+          This is basically a YouTube kind of website/</p>
+        <h3>Vogelspotters</h3>
+        <img class="project" src="img/projects/dithered/vogeltjes.png" alt=""> <br>
+        <a href='https://github.com/Thom2503/vogelspotters' target="_blank">Github</a> <img id="external" src="img/link.png" alt="external-link">
+        <p>This was an image library for people who are bird watchers. The features are minimal but the execution is excellent.</p>
+        <h3>Learn things</h3>
+        <img class="project" src="img/projects/dithered/spa.png" alt=""> <br>
+        <a href='https://github.com/Thom2503/single-page' target="_blank">Github</a> <img id="external" src="img/link.png" alt="external-link">
+        <p>This was an asignment to create a single page application using ajax. I want to do more with this website idea.</p>
+        <h3>GLR Kaartjes wedstrijd</h3>
+        <img class="project" src="img/projects/dithered/kaartjes.png" alt=""> <br>
+        <a href='https://github.com/Thom2503/back2_periode4' target="_blank">Github</a> <img id="external" src="img/link.png" alt="external-link">
+        <p>A website where students could enter a raffle to win tickets for a soccer event that year.
+          It had a form, an emailing system and an admin panel.</p>
+        <h3>Pizza stacker</h3>
+        <img class="project" src="img/projects/dithered/pizza.png" alt=""> <br>
+        <a href='https://play.google.com/store/apps/details?id=com.DefaultCompany.PizzaThrower' target="_blank">Google play store</a> <img id="external" src="img/link.png" alt="external-link"><br>
+        <a href='https://gameskeys.net/top-android-games-to-tryout-in-july-2021/' target="_blank">In an article</a> <img id="external" src="img/link.png" alt="external-link">
+        <p>A small mobile game where you need to stack as much pizza boxes as possible. It is hosted on the google play store.</p>
+        <h3>Portfolio website</h3>
+        <img class="project" src="img/projects/dithered/cms.png" alt=""> <br>
+        <a href='https://github.com/Thom2503/cms-portfoliosite' target="_blank">Github</a> <img id="external" src="img/link.png" alt="external-link">
+        <p>A website for GLR students to put their work on. It has filtering in different majors.
+          You need to be verified with an email. And a whole lot more.</p>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p> You can contact me at: <br>
+            <a href="javascript:linkTo_UnCryptMailto('nbjmup;uipnwfmeivjt14Ahnbjm/dpn');">
+              thomveldhuis03 [at] gmail [dot] com</a> or<br>
+            <a href="javascript:linkTo_UnCryptMailto('nbjmup;95954Ahms/om');">84843 [at] glr [dot] nl</a> <br>
+            or you can contact me via twitter dms. But I like email more. <br>
+            State in the subject of your mail what this is about</p>
+      </section>
+      <section id="other">
+        <h2>Other</h2>
+        <p>Some of the websites (of people) that I like. A lot of them are for articles/blogs.</p>
+        <div class="webList">
+          <li><a href="https://solar.lowtechmagazine.com/" target="_blank">https://solar.lowtechmagazine.com/</a></li>
+          <li><a href="http://paulgraham.com/" target="_blank">http://paulgraham.com/</a></li>
+          <li><a href="https://news.ycombinator.com/news" target="_blank">https://news.ycombinator.com/</a></li>
+          <li><a href="https://wiki.xxiivv.com/site/home.html" target="_blank">https://wiki.xxiivv.com/</a></li>
+          <li><a href="https://100r.co/site/home.html" target="_blank">https://100r.co/</a></li>
+          <li><a href="https://publicdomainreview.org/" target="_blank">https://publicdomainreview.org/</a></li>
+          <li><a href="https://justine.lol/" target="_blank">https://justine.lol/</a></li>
+          <li><a href="https://danluu.com/" target="_blank">https://danluu.com/</a></li>
+          <li><a href="https://computer.rip/" target="_blank">https://computer.rip/</a></li>
+          <li><a href="https://theanarchistlibrary.org/special/index" target="_blank">https://theanarchistlibrary.org/</a></li>
+          <li><a href="https://www.socialism101.com/" target="_blank">https://www.socialism101.com/</a></li>
+        </div>
+        <p>Some of the pixelart I made.</p>
+        <div id="gallery" class="gallery">
+            <script type="text/javascript">
+            // This is a stupid way to do this but meh.
+            var i = 0;
+            for (i = 1; i <= 6; i++) {
+              var img = document.createElement("img");
+              img.src = "img/pixelart/"+i+".png";
+              var src = document.getElementById("gallery");
+              src.appendChild(img);
+            }
+            </script>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <hr>
+      <a href="https://github.com/Thom2503" target="_blank">Github</a> <img id="external" src="img/link.png" alt="external-link"> |
+      <a href="https://twitter.com/Thom2503" target="_blank">Twitter</a> <img id="external" src="img/link.png" alt="external-link"> |
+      <span>Thom Veldhuis &#169; <span id="year"></span></span>
+    </footer>
+  </body>
+  <script type="text/javascript">
+    // I don't like js but oh well
+    // To get the current year for copyright haha
+    document.getElementById("year").innerHTML = new Date().getFullYear();
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>Thom Veldhuis</title>
-  <link rel="icon" type="image/png" href="img/torii_gate.png"/>
-  <link rel="stylesheet" href="style/index.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body>
-  <div class="topnav" id="myTopnav">
-    <div class="logo-img">
-      <img src="img/torii_gate.png" onclick="goToIndex();" alt="Logo van mijn website">
-    </div>
-    <a href="https://github.com/Thom2503" target="_blank">Github</a>
-    <a href="contact.html">Contact</a>
-    <a href="projects.html">Projecten</a>
-    <a href="about.html">Over</a>
-    <a href="javascript:void(0);" class="icon" onclick="topbarFunctie()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-  <main>
-    <img class="center-img" src="img/birb_header.png">
-  </main>
-  <footer>
-    <div class="spanright">
-      <span id="year"></span> Made By Thom Veldhuis <img id="eye" src="img/eyeEmoji.png" alt="&eye"><br><br>
-      <a href="https://twitter.com/Thom2503" target="_blank">Twitter</a>
-      <a href="123456789.html">------</a>
-      <a href="#eng" onclick="window.alert('This is still in the working')" data-reload>ENG</a>
-      <a href="#ned" onclick="window.alert('Ben ik nog mee bezig')" data-reload>NLD</a>
-    </div>
-  </footer>
-</body>
-<script>
-  document.getElementById("year").innerHTML = new Date().getFullYear();
-
-  function goToIndex() {
-    window.location.href = "index.html";
-  }
-
-  function topbarFunctie() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
+    function UnCryptMailto(s) {
+         var n = 0;
+         var r = "";
+         for(var i = 0; i < s.length; i++) {
+             n = s.charCodeAt( i );
+             if(n >= 8364) {
+                 n = 128;
+             }
+             r += String.fromCharCode(n - 1);
+         }
+         return r;
     }
-  }
-</script>
-
+    function linkTo_UnCryptMailto(s) {
+        location.href=UnCryptMailto(s);
+    }
+  </script>
 </html>
